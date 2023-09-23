@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'qqq'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.10.0',
+            'com.codeborne:selenide:6.18.0',
+            'org.assertj:assertj-core:3.24.2',
+            'com.codeborne:pdf-test:1.5.0',
+            'com.codeborne:xls-test:1.4.3',
+            'com.opencsv:opencsv:5.8',
+            'com.google.code.gson:gson:2.10.1'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
